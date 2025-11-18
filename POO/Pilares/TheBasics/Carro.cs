@@ -1,15 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 namespace TheBasics
 {
-    public class Carro
+    public class Carro : Veiculo
     {
-        public void AbrindoPortaMalas()
+        public void AbrirPortaMala()
         {
-            System.Console.WriteLine($"Porta-malas aberto");
+            System.Console.WriteLine("Porta-Malas aberto");
+        }
+
+        public void ExibirDadosCarro()
+        {
+            System.Console.WriteLine(@$"Marca: {Marca} / Modelo: {Modelo} / Quantidade de Rodas: {qtdRodas} ");
+            System.Console.WriteLine();
         }
     }
 }

@@ -1,61 +1,90 @@
-﻿using System.Net.WebSockets;
+﻿
 using TheBasics;
-Console.Clear();
 
-// // array/ lista de pessoas
+Console.Clear();
+// //arrays/Lista de pessoas
 // List<Pessoa> peoples = new List<Pessoa>();
-// //*************EDUARDO****************
-// // Endereço
+
+
+
+// //**************EDUARDO****************
+// //Endereço
 // Endereco enderecoEdu = new Endereco();
 // enderecoEdu.Logradouro = "Rua Niterói";
-// // Pessoa com endereço
+// //pessoa com endereço
 // Pessoa edu = new Pessoa(enderecoEdu);
 // edu.Nome = "Eduardo Costa";
 // edu.Idade = 43;
 
-// //*************ALEXIA****************
-// // Endereço
+// //=============ALÉXIA==============
+// //Endereço
 // Endereco endAlexia = new Endereco();
-// endAlexia.Logradouro = "Rua lá";
-// // Pessoa com endereço
+// endAlexia.Logradouro = "Rua lá de casa";
+// //pessoa com endereço
 // Pessoa alexia = new Pessoa(endAlexia);
-// alexia.Nome = "Alexia Vitoria";
+// alexia.Nome = "Alexia Santos";
 // alexia.Idade = 24;
 
-// // Guardando os dados na lista
 
-// peoples.Add(edu);// 0
-// peoples.Add(alexia);// 1
+
+// //guardando os dados na lista
+// peoples.Add(edu);//0
+// peoples.Add(alexia);//1
 
 
 // foreach (var p in peoples)
 // {
-//     Console.WriteLine($"Nome: {p.Nome}");
+//     System.Console.WriteLine($"Nome: {p.Nome}");
 // }
 
 
-Endereco endEnzo= new Endereco();
-endEnzo.Logradouro = "Spinola Teixeira";
-endEnzo.Numero = 3960;
 
-Aluno pedroEnzo = new Aluno(endEnzo);
-pedroEnzo.Nome = "Pedro Enzo";
-pedroEnzo.Curso = "Desenvolvimento de Sistemas";
-pedroEnzo.RA = "1234-xpto";
-pedroEnzo.NotaFinal = 9.75f;
+// Endereco endEnzo = new Endereco();
+// endEnzo.Logradouro = "Spínola Teixeira";
+// endEnzo.Numero = 3960;
+// Aluno PedroEnzo = new Aluno(endEnzo);
+// PedroEnzo.Nome = "Pedro Enzo";
+// PedroEnzo.Curso = "Desenvolvimento de Sistemas";
+// PedroEnzo.RA = "1234-xpto";
+// PedroEnzo.NotaFinal = 9.75f;
 
-Endereco endProfAlex = new Endereco();
-endProfAlex.Logradouro = "Rua lá de casa";
-endProfAlex.Numero = 897;
-
-Professor profAlexia = new Professor(endProfAlex);
-profAlexia.Nome = "Aléxia Vitória";
-
-Console.WriteLine($"Aluno {pedroEnzo.Nome} estuda na turma {pedroEnzo.Curso} da prof {profAlexia.Nome}");
+// //Professor
+// Endereco endProfAlex = new Endereco();
+// endProfAlex.Logradouro = "Rua lá de Casa";
+// endProfAlex.Numero = 987;
 
 
+// Professor profAlexia = new Professor(endProfAlex);
+// profAlexia.Nome = "Aléxia Vitória";
+
+// System.Console.WriteLine($"Aluno {PedroEnzo.Nome} estuda na turma {PedroEnzo.Curso} da profa. {profAlexia.Nome}");
+
+
+Carro c1 = new Carro();
+c1.Marca = "Honda";
+c1.Modelo = "Civic G10";
+c1.qtdRodas = 4;
+c1.Ligar();
+c1.Desligar();
+c1.AbrirPortaMala();
+c1.ExibirDadosCarro();
 
 
 
+Moto dominar400 = new Moto();
+dominar400.Marca = "Bajaj";
+dominar400.Modelo = "Dominar 400";
+dominar400.qtdRodas = 2;
+dominar400.Ligar();
+dominar400.Empinar();
+dominar400.ExibirMoto();
 
-
+Aviao av = new Aviao();
+av.Marca = "Boeing";
+av.Modelo = "737 MAX 9";
+av.qtdRodas = 6;
+av.qtdAcentos = 170;
+av.qtdTurbina = 2;
+av.companhia = "Gol";
+av.Decolar();
+av.ExibirAviao();

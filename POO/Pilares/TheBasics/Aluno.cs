@@ -1,14 +1,15 @@
+
+
+
 namespace TheBasics
 {
     public class Aluno : Pessoa
-    {
-        //cria um construtor na classe aluno que recebe o endereço
-        //chama o construtor da classe mãe(base) e repassa o
-        //  endereço para ela 
+    {//Cria um construtor na classe Aluno que recebe o endereço
+     //Chama o construtor da classe mãe (Base) e repassa o endereço para ela
         public Aluno(Endereco endereco) : base(endereco)
         {
         }
-        
+
         public string RA;
         public float NotaFinal;
         public string Curso;
