@@ -1,0 +1,12 @@
+@model IEnumerable<CadlunoTorloni.Models.Aluno>
+
+<h1>pagina de alunos</h1>
+
+@foreach (var aluno in Model)
+{
+    <p>
+        id: @aluno.Id;
+        Nome: @aluno.Nome;
+        Idade: @aluno.Idade;
+    </p>
+}
