@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: var(--cor-preto);
+    padding: 20px;
+    margin: 0;
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.perfil-header img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-info {
+    flex-grow: 1;
+}
+
+.nome {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.perfil-status {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--cor-preto);
+    gap: 15px;
+    display: flex;
+}
+
+.perfil {
+    margin-top: 8px;
+    font-size: 14px;
+    color: var(--cor-azul);
+    gap: 10px;
+}
+
+.perfil>a {
+    color: var(--cor-azul);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 15px 0;
+    border-bottom: 1px solid #dbdbdb;
+    color: #262626;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.icon-grid {
+    display: inline-block;
+    border: 1px solid #262626;
+    padding: 4px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.post {
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.post-header img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-header .post-nome {
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-header .verified-badge {
+    font-size: 14px;
+    color: var(--cor-azul);
+}
+
+.texto {
+    font-size: 14px;
+    color: var(--cor-preto);
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.post-like {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.post-commentario {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #8e8e8e;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade básica */
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}

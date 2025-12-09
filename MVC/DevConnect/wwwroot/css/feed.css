@@ -1,0 +1,260 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-flex-publi {
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Storys*/
+#storys {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid var(--cor-cinza-escuro2);
+    background-color: var(--cor-branca);
+    border-radius: 8px;
+
+}
+
+#storys::-webkit-scrollbar {
+    width: 0;
+}
+
+.card-storys>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.card-storys>a>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-storys>a>span {
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+    text-transform: lowercase;
+}
+
+/* Formulário de publicação */
+#cadastro-publi {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 3%;
+    border: 1px solid var(--cor-cinza-escuro2);
+    background-color: var(--cor-branca);
+    border-radius: 8px;
+}
+
+#cadastro-publi>h2 {
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 800;
+    color: var(--cor-cinza-escuro2);
+}
+
+#cadastro-publi>form>textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 6px;
+    resize: none;
+    background-color: var(--cor-cinza-claro);
+    color: var(--cor-cinza-escuro2);
+    font-size: var(--tamanho-fonte-sm);
+    border: 1px solid var(--cor-cinza-medio);
+}
+
+#cadastro-publi>form>footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+#cadastro-publi>form>textarea::placeholder {
+    color: var(--cor-azul-escuro);
+}
+
+.texto-upload {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--cor-cinza-escuro4);
+    color: var(--cor-cinza-escuro3);
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.upload-input {
+    display: none;
+}
+
+.formulario-botao-azul {
+    width: 100%;
+    max-width: 135px;
+    gap: 15px;
+    flex-wrap: wrap;
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+    border: none;
+    border-radius: 6px;
+    font-size: var(--tamanho-fonte-sm);
+    cursor: pointer;
+}
+
+.formulario-botao-azul:hover {
+    background-color: var(--cor-azul);
+}
+
+/* Card de Publicação */
+#Publicacao {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-publi {
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 16px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 10px rgb(0, 0, 0, );
+}
+
+.card-publi>header {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    border: 1px solid var(--cor-preto);
+}
+
+.card-publi>header>a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-weight: 500;
+}
+
+.card-publi>figure {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.publi-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.publi-header a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-weight: 600;
+}
+
+.publi-header .nome-usuario {
+    font-size: var(--tamanho-fonte-md);
+}
+
+.publi-header .tempo-publicado {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-medio);
+}
+
+/* IMAGEM */
+.imagem-publicacao {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+
+
+/* CURTIDAS */
+.likes {
+    font-weight: 600;
+    font-size: var(--tamanho-fonte-sm);
+    padding: 0 10px;
+}
+
+/* COMENTÁRIO */
+.description-publicacao {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.description-publicacao p {
+    margin: 0;
+}
+
+.interacoes-publicacao {
+    width: auto;
+    flex-wrap: nowrap;
+    margin: 15px 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    order: 1;
+    margin: 15px 3%;
+}
+
+.interacoes-publicacao>button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.interacoes-publicacao>span {
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 500;
+    color: var(--cor-preto);
+}
+
+.card-publi>button {
+    margin: 15px 3%;
+    background-color: transparent;
+    border: none;
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+    color: var(--cor-preto);
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: none;
+}

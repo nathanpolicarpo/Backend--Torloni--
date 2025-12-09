@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="~/css/Perfil.css">
+
+<!-- Cabeçalho -->
+<header id="cabeçalho">
+    <nav>
+        <a id="Logo-desktop" href="./feed.html">
+            <img src="../images/logo-devconnect-lg.svg" alt="Logo da Empresa DevConnect">
+        </a>
+
+        <a id="Logo-mobile" href="./feed.html">
+            <img src="../images/logo-devconnect-sm.svg" alt="Logo da Empresa DevConnect">
+        </a>
+
+        <a asp-controller="Home" asp-action="Index">
+            <img src="../images/icone-casa-azul.svg" alt="Ícone de uma casa azul" />
+        </a>
+
+        <a href="#">
+            <img src="../images/icone-coracao-azul.svg" alt="Ícone de um coração azul" />
+        </a>
+
+        <a asp-controller="Usuario" asp-action="Perfil">
+            <img src="../images/img.nathan.jpg" alt="Foto de perfil" />
+        </a>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- Conteúdo do perfil -->
+    <section class="perfil-header">
+        <img src="../images/img.nathan.jpg" alt="Foto de perfil Wesley" />
+        <div class="perfil-info">
+            <div class="nome">
+                Wesley
+            </div>
+            <div class="perfil-status">
+                <div><b>1k</b> publicações</div>
+                <div><b>0</b> seguindo</div>
+                <div><b>5T</b> seguidores</div>
+            </div>
+            <div class="perfil">
+                <a href="#">Wesley Policarpo</a>
+                <a href="#">Editar Perfil</a>
+                <a href="#">Sair</a>
+            </div>
+        </div>
+    </section>
+
+    <hr />
+
+    <div class="separator">
+        <img src="../images/icone-galeria-preto.svg" alt="">
+    </div>
+
+    <!-- Postagens -->
+    <article class="post">
+        <div class="post-header">
+            <img src="../images/img.nathan.jpg" alt="Foto Wesley" />
+            <div class="nome-post">
+                Wesley
+
+            </div>
+        </div>
+        <p class="texto">
+            Esta é a história não contada de um caçador, que um dia foi para a floresta para fazer exatamente isso,
+            caçar.
+            Em sua viagem, ele decidiu mudar de rumo para dar diversidade ao seu ofício, então ele virou seu
+            caminhão e
+            o estacionou em
+            frente a uma área de floresta desconhecida que tinha a
+        </p>
+        <div class="post-like">
+            <div class="like" title="Curtir">
+                1M curtidas
+            </div>
+            <div class="post-comentario">Ver todos os comentários...</div>
+        </div>
+    </article>
+
+    <article class="post">
+        <div class="post-header">
+            <img src="../images/img.nathan.jpg" alt="Foto Wesley" />
+            <div class="nome-post">
+                Wesley
+
+            </div>
+        </div>
+        <p class="texto">
+            Esta é a história não contada de um caçador, que um dia foi para a floresta para fazer exatamente isso,
+            caçar.
+            Em sua viagem, ele decidiu mudar de rumo para dar diversidade ao seu ofício, então ele virou seu
+            caminhão e
+            o estacionou em
+            frente a uma área de floresta desconhecida que tinha a
+        </p>
+        <div class="post-like">
+            <div class="like" title="Curtir">
+                1M curtidas
+            </div>
+            <div class="post-comentario">Ver todos os comentários...</div>
+    </article>
+</div>
+
+
+</html>

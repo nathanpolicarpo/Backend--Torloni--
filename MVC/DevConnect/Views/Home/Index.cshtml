@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "DevConnect";
+}
+
+<Script defer>
+const usuarioNovoCadastrado = "@TempData["UsuarioNovoCadastrado"]";
+if (usuarioNovoCadastrado === "Cadastrado com sucesso!") {
+    alert("Cadastro realizado com sucesso! Bem-vindo à comunidade DevConnect.");
+}
+
+</Script>
+<link rel="stylesheet" href="~/css/login.css">
+
+<main>
+    <div>
+
+        <form id="formulario" class="estilo-formulario">
+            <img src="../images/logo-devconnect-lg.svg" alt="">
+
+            <div>
+                <label for="">Nome de usuario:</label>
+                <input type="text" name="" id="">
+            </div>
+
+            <div>
+                <label for="">Senha:</label>
+                <input type="password" name="" id="">
+            </div>
+
+            <button type="submit" class="formulario-botao-azul">Entrar</button>
+
+            <p>ou</p>
+
+            <a href="#">Esqueceu a senha?</a>
+
+        </form>
+
+        <!--secao cadastro-->
+
+        <section id="secao-cadastro" class="estilo-formulario">
+            <p>Não tem uma conta? <a asp-controller="Usuario" asp-action="Perfil" >Cadastre-se</a></p>
+        </section>
+
+        <p class="informacao-aplicativo">obtenha o aplicativo.</p>
+        <!--secao instalacao-->
+        <section id="secao-instalacao">
+            <img src="../images/app-store.svg" alt="imagem informandopara baixar no app store.">
+            <img src="../images/google-play.svg" alt="imagem informandopara baixar no google-play store.">
+        </section>
+
+    </div>
+</main>
