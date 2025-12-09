@@ -54,7 +54,7 @@ namespace Encapsulamento
         public string ObterMarca()
         {
             return marca;
-        }
+        }                       
 
         public void DefinirModelo(string Mo)
         {
