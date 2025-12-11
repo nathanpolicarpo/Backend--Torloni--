@@ -17,11 +17,11 @@ public partial class TbPublicacao
     public int? IdUsuario { get; set; }
 
     [Column("descricao")]
-    [StringLength(100)]
-    public string? Descricao { get; set; }
+    [StringLength(255)]
+    public string Descricao { get; set; } = null!;
 
     [Column("imagem_url")]
-    [StringLength(100)]
+    [StringLength(255)]
     public string? ImagemUrl { get; set; }
 
     [Column("data_publicacao")]

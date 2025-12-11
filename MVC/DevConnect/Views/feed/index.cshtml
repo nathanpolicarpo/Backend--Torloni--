@@ -1,3 +1,22 @@
+@using Microsoft.IdentityModel.Tokens
+@model List<DevConnect.Models.TbPublicacao>
+
+<script>
+    const publicacaoCadastrado = "@ViewBag.PublicacaoCadastrado";
+    if (publicacaoCadastrado === "Sucesso") {
+        alert("Publicação cadastrada com sucesso!");
+    }
+    else if (publicacaoCadastrado == "Não cadastrada") {
+        alert("Erro ao cadastrar a publicação. Por favor, tente novamente.");
+    }
+    else if (publicacaoCadastrado === "Cadastrada") {
+        alert("Publicação postada com sucesso!");
+    }
+</script>
+
+
+
+
 <link rel="stylesheet" href="~/css/feed.css">
 
 <header id="cabeçalho">
@@ -13,9 +32,8 @@
         <div class="cabeçalho-acoes">
 
             <a asp-controller="Feed" asp-action="Index">
-            <img src="../images/icone-casa-azul.svg"
-                    alt="icone de uma casa azul">
-                    </a>
+                <img src="../images/icone-casa-azul.svg" alt="icone de uma casa azul">
+            </a>
 
             <a href="#"><img src="../images/icone-coracao-azul.svg" alt="icone de um coração azul"></a>
 
@@ -90,49 +108,91 @@
         </section>
         <!-- Fim Stories -->
 
-        <!-- Formulário de Publicação -->
-        <section id="cadastro-publi" class="estilo-formulario">
-            <h2>Publicação</h2>
 
-            <form action="">
-                <textarea placeholder="Digite a descrição do post..."></textarea>
+        <section id="cadastro-publi">
+            <h2>Publicação</h2>
+            <form asp-action="Index" asp-controller="Feed" method="post" enctype="multipart/form-data">
+                <textarea name="Descricao" placeholder="Digite a descrição do post..." required></textarea>
+
                 <footer>
-                    <label for="upload" class="texto-upload">Faça upload da sua imagem aqui...</label>
-                    <input type="file" id="upload" class="upload-input" />
+                    <div>
+                        <label for="arquivo" class="botao-upload">Faça o upload da sua imagem</label>
+                        <input type="file" id="arquivo" name="imagem">
+                    </div>
                     <button type="submit" class="formulario-botao-azul">Postar</button>
                 </footer>
+
             </form>
         </section>
 
         <!-- Publicações -->
         <section id="Publicacao">
-            <article class="card-publi">
-                <header class="publi-header">
-                    <a href="#">
-                        <img class="foto-de-perfil" src="../images/img.nathan.jpg" alt="Foto de perfil">
-                        <span class="nome-usuario">wesley</span>
-                        <span class="tempo-publicado">• 1 d</span>
-                    </a>
-                </header>
+            @foreach (TbPublicacao publi in Model)
+            {
+                if (!publi.ImagemUrl.IsNullOrEmpty())
+                {
+                    <article class="card-publi">
+                        <header class="publi-header">
+                            <a href="#">
+                                <img class="foto-de-perfil" src="~/images/@publi.IdUsuarioNavigation?.FotoPerfilUrl" 
+                                alt="Foto de perfil">
+                                @publi.IdUsuarioNavigation?.NomeUsuario
+                                <span class="nome-usuario">wesley</span>
+                                <span class="tempo-publicado">• 1 d</span>
+                            </a>
+                        </header>
+                        <figure>
+                            <img class="imagem-publicacao" src="~/images/@publi.ImagemUrl" alt="Paisagem">
+                        </figure>
 
-                <figure>
-                    <img class="imagem-publicacao" src="../images/img paisagem post.jpg" alt="Paisagem">
-                </figure>
+                        <div class="interacoes-publicacao">
+                            <img src="../images/icone-coracao-preto.svg" alt="Curtir">
+                            <img src="../images/icone-comentario-preto.svg" alt="Comentar">
+                        </div>
 
-                <div class="interacoes-publicacao">
-                    <img src="../images/icone-coracao-preto.svg" alt="Curtir">
-                    <img src="../images/icone-comentario-preto.svg" alt="Comentar">
-                </div>
+                        <span class="likes">1M curtidas</span>
 
-                <span class="likes">1M curtidas</span>
+                        <div class="description-publicacao">
+                            <strong>Wesley</strong>
+                            <p>Vcs estão bem?</p>
+                        </div>
 
-                <div class="description-publicacao">
-                    <strong>Wesley</strong>
-                    <p>Vcs estão bem?</p>
-                </div>
+                        <button class="ver-comentarios">Ver todos os comentários...</button>
+                    </article>
 
-                <button class="ver-comentarios">Ver todos os comentários...</button>
-            </article>
+                }
+                else
+                {
+                    <article class="post">
+                        <div class="post-header">
+                            <img src="../images/img.nathan.jpg" alt="Foto Wesley" />
+                            <div class="nome-post">
+                                Wesley
+
+                            </div>
+                        </div>
+                        <p class="texto">
+                            Esta é a história não contada de um caçador, que um dia foi para a floresta para fazer exatamente
+                            isso,
+                            caçar.
+                            Em sua viagem, ele decidiu mudar de rumo para dar diversidade ao seu ofício, então ele virou seu
+                            caminhão e
+                            o estacionou em
+                            frente a uma área de floresta desconhecida que tinha a
+                        </p>
+                        <div class="post-like">
+                            <div class="like" title="Curtir">
+                                1M curtidas
+                            </div>
+                            <div class="post-comentario">Ver todos os comentários...</div>
+                        </div>
+                    </article>
+                }
+
+
+
+
+            }
         </section>
 
     </div>
