@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C2oDIRrmAEGe3pApDLMOATKpqA11Lj2xx19DX3xA5kc=",
+  "Hash": "kvpNGCIcCbx8PjBz1lgvq1TihCPJHBhK+OIzQUnkQJE=",
   "Source": "DevConnect",
   "BasePath": "_content/DevConnect",
   "Mode": "Default",
@@ -2516,6 +2516,27 @@
       "OriginalItemSpec": "wwwroot\\images\\usuarios\\WIN_20250610_11_04_12_Pro.jpg"
     },
     {
+      "Identity": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\images\\WIN_20250610_11_04_11_Pro.jpg",
+      "SourceId": "DevConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\",
+      "BasePath": "_content/DevConnect",
+      "RelativePath": "images/WIN_20250610_11_04_11_Pro#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dnlxk0b2hq",
+      "Integrity": "J1B8effWq+zrVsJds9790rHbv8++Lw8DUBWaJ9T9m04=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\WIN_20250610_11_04_11_Pro.jpg"
+    },
+    {
       "Identity": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\images\\WIN_20250610_11_04_12_Pro.jpg",
       "SourceId": "DevConnect",
       "SourceType": "Discovered",
@@ -2535,6 +2556,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\WIN_20250610_11_04_12_Pro.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\images\\WIN_20251002_08_35_12_Pro.jpg",
+      "SourceId": "DevConnect",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\",
+      "BasePath": "_content/DevConnect",
+      "RelativePath": "images/WIN_20251002_08_35_12_Pro#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "49e47fahay",
+      "Integrity": "KATxZuUViFhVH92j0huEaDOiq9YavY8fLbVR/d7UnkA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\WIN_20251002_08_35_12_Pro.jpg"
     },
     {
       "Identity": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\js\\site.js",
@@ -12142,6 +12184,88 @@
       ]
     },
     {
+      "Route": "images/WIN_20250610_11_04_11_Pro.dnlxk0b2hq.jpg",
+      "AssetFile": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\images\\WIN_20250610_11_04_11_Pro.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "219610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J1B8effWq+zrVsJds9790rHbv8++Lw8DUBWaJ9T9m04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Dec 2025 19:12:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dnlxk0b2hq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/WIN_20250610_11_04_11_Pro.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-J1B8effWq+zrVsJds9790rHbv8++Lw8DUBWaJ9T9m04="
+        }
+      ]
+    },
+    {
+      "Route": "images/WIN_20250610_11_04_11_Pro.jpg",
+      "AssetFile": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\images\\WIN_20250610_11_04_11_Pro.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "219610"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J1B8effWq+zrVsJds9790rHbv8++Lw8DUBWaJ9T9m04=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Dec 2025 19:12:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J1B8effWq+zrVsJds9790rHbv8++Lw8DUBWaJ9T9m04="
+        }
+      ]
+    },
+    {
       "Route": "images/WIN_20250610_11_04_12_Pro.c1yh080i9z.jpg",
       "AssetFile": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\images\\WIN_20250610_11_04_12_Pro.jpg",
       "Selectors": [],
@@ -12164,7 +12288,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 11 Dec 2025 14:46:14 GMT"
+          "Value": "Thu, 11 Dec 2025 19:13:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12209,7 +12333,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 11 Dec 2025 14:46:14 GMT"
+          "Value": "Thu, 11 Dec 2025 19:13:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12220,6 +12344,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-cJm4x+4yoXCaboeUCqzVp64nCDkSXgD2s/Z01PIRwqM="
+        }
+      ]
+    },
+    {
+      "Route": "images/WIN_20251002_08_35_12_Pro.49e47fahay.jpg",
+      "AssetFile": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\images\\WIN_20251002_08_35_12_Pro.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KATxZuUViFhVH92j0huEaDOiq9YavY8fLbVR/d7UnkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Dec 2025 19:19:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "49e47fahay"
+        },
+        {
+          "Name": "label",
+          "Value": "images/WIN_20251002_08_35_12_Pro.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KATxZuUViFhVH92j0huEaDOiq9YavY8fLbVR/d7UnkA="
+        }
+      ]
+    },
+    {
+      "Route": "images/WIN_20251002_08_35_12_Pro.jpg",
+      "AssetFile": "C:\\Users\\45275415877\\Desktop\\Backend--Torloni--\\MVC\\DevConnect\\wwwroot\\images\\WIN_20251002_08_35_12_Pro.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KATxZuUViFhVH92j0huEaDOiq9YavY8fLbVR/d7UnkA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Dec 2025 19:19:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KATxZuUViFhVH92j0huEaDOiq9YavY8fLbVR/d7UnkA="
         }
       ]
     },
